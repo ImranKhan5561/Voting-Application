@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+}
+
+.title {
+    font-size: 2em;
+    margin: 0;
+}
+
+.candidate-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.candidate-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+.candidate-photo {
+    margin-right: 20px;
+}
+
+.candidate-img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.candidate-logo {
+    position: absolute;
+    top: 35px;
+    right: 10px;
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    overflow: hidden;
+}
+
+.logo-img {
+    width: 70px;
+    height: 70px;
+    
+    border-radius:50%;
+}
+
+.candidate-info {
+    flex: 1;
+    text-align: left;
+}
+
+.candidate-info h2 {
+    margin-bottom: 10px;
+    color: #007BFF;
+}
+
+.candidate-info p {
+    margin-bottom: 20px;
+    color: #777;
+}
+
+.vote-button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.vote-button:hover {
+    background-color: #0056b3;
+}
+
+.election-info {
+    text-align: center;
+    color:orange;
+}
+
+.election-info h2 {
+    margin: 0;
+}
+
+.election-info p {
+    margin: 0;
+    font-size: 0.9em;
+    color: #666;
+}
+@media (max-width:600px){
+
+.candidate-logo {
+    position: absolute;
+    top: 10px;
+    left:0;
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    overflow: hidden;
+}
+.candidate-img {
+    position:relative;
+    top:50px;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+}
